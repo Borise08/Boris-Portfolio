@@ -96,7 +96,13 @@ const SKILLS = [
 //    image    → "images/mygame.webp"
 // ──────────────────────────────────────────────────────────────────────
 const GAMES = [
-
+    {
+        placeId: "117946489105796",
+        role:    "Lead Developer",
+        year:    "2026",
+        status:  "In Development",
+        skills:  ["Development Leader", "Building", "Scripting"],
+    },
     {
         placeId: "87017354625620",
         role:    "Developer",
@@ -106,19 +112,11 @@ const GAMES = [
     },
 
     {
-        placeId: "18870472580",
+        placeId: "80368750667927",
         role:    "Developer",
         year:    "2026",
         status:  "In Development",
         skills:  ["Building"],
-    },
-
-    {
-        placeId: "116244121702559",
-        role:    "Developer",
-        year:    "2026",
-        status:  "Live",
-        skills:  ["Building", "Scripting"],
     },
 
     {
