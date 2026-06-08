@@ -71,10 +71,10 @@ function updateLiveStats(games) {
     const portfolioVisitsEl = document.getElementById('p-visits');
     if (portfolioVisitsEl && totalVisits) portfolioVisitsEl.textContent = totalVisits;
 
-    const totalPlayingEl = document.getElementById('stat-playing');
-    if (totalPlayingEl) {
+    const portfolioPlayingEl = document.getElementById('p-playing');
+    if (portfolioPlayingEl) {
         const playing = games.reduce((acc, g) => acc + (g.playing || 0), 0);
-        totalPlayingEl.textContent = formatPlaying(playing);
+        portfolioPlayingEl.textContent = formatPlaying(playing);
     }
 
     games.forEach(g => {
@@ -117,18 +117,18 @@ function initLoading() {
 /* ── Custom Cursor ───────────────────────────────────────── */
 function initCursor() {
     if (typeof DISPLAY !== 'undefined' && !DISPLAY.enableCursor) return;
-    const dot  = document.querySelector('.cursor-dot');
+    const dot = document.querySelector('.cursor-dot');
     const ring = document.querySelector('.cursor-ring');
     if (!dot || !ring) return;
     let mx = 0, my = 0, rx = 0, ry = 0;
     document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
     const animate = () => {
-        dot.style.left  = mx + 'px';
-        dot.style.top   = my + 'px';
+        dot.style.left = mx + 'px';
+        dot.style.top = my + 'px';
         rx += (mx - rx) * 0.12;
         ry += (my - ry) * 0.12;
         ring.style.left = rx + 'px';
-        ring.style.top  = ry + 'px';
+        ring.style.top = ry + 'px';
         requestAnimationFrame(animate);
     };
     animate();
@@ -208,7 +208,7 @@ function initHeroStats() {
     if (typeof ME === 'undefined') return;
     const map = {
         'stat-games': ME.totalGames,
-        'stat-exp':   ME.experience,
+        'stat-exp': ME.experience,
     };
     const io = new IntersectionObserver(entries => {
         entries.forEach(e => {
@@ -265,10 +265,10 @@ function initHeroCubes() {
     const wrap = document.querySelector('.cubes');
     if (!wrap) return;
     const positions = [
-        { top: '15%', right: '8%',  size: 40, speed: 10 },
+        { top: '15%', right: '8%', size: 40, speed: 10 },
         { top: '60%', right: '15%', size: 24, speed: 14 },
         { top: '30%', right: '30%', size: 18, speed: 18 },
-        { top: '75%', right: '5%',  size: 32, speed: 12 },
+        { top: '75%', right: '5%', size: 32, speed: 12 },
     ];
     positions.forEach(pos => {
         const cw = document.createElement('div');
@@ -281,12 +281,12 @@ function initHeroCubes() {
         </div>`;
         const faces = cw.querySelectorAll('.face');
         faces.forEach(f => { f.style.width = f.style.height = pos.size + 'px'; });
-        cw.querySelector('.front').style.transform  = `translateZ(${pos.size/2}px)`;
-        cw.querySelector('.back').style.transform   = `rotateY(180deg) translateZ(${pos.size/2}px)`;
-        cw.querySelector('.left').style.transform   = `rotateY(-90deg) translateZ(${pos.size/2}px)`;
-        cw.querySelector('.right').style.transform  = `rotateY(90deg) translateZ(${pos.size/2}px)`;
-        cw.querySelector('.top').style.transform    = `rotateX(90deg) translateZ(${pos.size/2}px)`;
-        cw.querySelector('.bottom').style.transform = `rotateX(-90deg) translateZ(${pos.size/2}px)`;
+        cw.querySelector('.front').style.transform = `translateZ(${pos.size / 2}px)`;
+        cw.querySelector('.back').style.transform = `rotateY(180deg) translateZ(${pos.size / 2}px)`;
+        cw.querySelector('.left').style.transform = `rotateY(-90deg) translateZ(${pos.size / 2}px)`;
+        cw.querySelector('.right').style.transform = `rotateY(90deg) translateZ(${pos.size / 2}px)`;
+        cw.querySelector('.top').style.transform = `rotateX(90deg) translateZ(${pos.size / 2}px)`;
+        cw.querySelector('.bottom').style.transform = `rotateX(-90deg) translateZ(${pos.size / 2}px)`;
         wrap.appendChild(cw);
     });
 }
@@ -300,11 +300,11 @@ function initMusic() {
     const audio = new Audio(MUSIC.track.src);
     audio.loop = true;
     audio.volume = 0.4;
-    const playBtn  = player.querySelector('.music-play-btn i');
-    const bars     = player.querySelector('.music-bars');
-    const titleEl  = player.querySelector('.music-title');
+    const playBtn = player.querySelector('.music-play-btn i');
+    const bars = player.querySelector('.music-bars');
+    const titleEl = player.querySelector('.music-title');
     const artistEl = player.querySelector('.music-artist');
-    if (titleEl)  titleEl.textContent  = MUSIC.track.title  || 'Background Music';
+    if (titleEl) titleEl.textContent = MUSIC.track.title || 'Background Music';
     if (artistEl) artistEl.textContent = MUSIC.track.artist || '';
     let playing = false;
     player.querySelector('.music-play-btn').addEventListener('click', () => {
@@ -313,7 +313,7 @@ function initMusic() {
             if (playBtn) playBtn.className = 'fas fa-play';
             if (bars) bars.classList.remove('playing');
         } else {
-            audio.play().catch(() => {});
+            audio.play().catch(() => { });
             if (playBtn) playBtn.className = 'fas fa-pause';
             if (bars) bars.classList.add('playing');
         }
@@ -323,10 +323,10 @@ function initMusic() {
 
 /* ── Status Helpers ──────────────────────────────────────── */
 function statusClass(status) {
-    if (status === 'Live')           return 'status-live';
+    if (status === 'Live') return 'status-live';
     if (status === 'In Development') return 'status-dev';
-    if (status === 'Closed')         return 'status-closed';
-    if (status === 'Beta')           return 'status-beta';
+    if (status === 'Closed') return 'status-closed';
+    if (status === 'Beta') return 'status-beta';
     return 'status-closed';
 }
 
@@ -371,10 +371,10 @@ function createGameCard(game) {
     `;
 
     const thumb = card.querySelector('.game-thumb');
-    const wrap  = card.querySelector('.game-thumb-wrap');
+    const wrap = card.querySelector('.game-thumb-wrap');
     if (game.image) {
         thumb.src = game.image;
-        thumb.addEventListener('load',  () => { thumb.classList.add('loaded'); wrap.classList.remove('loading'); });
+        thumb.addEventListener('load', () => { thumb.classList.add('loaded'); wrap.classList.remove('loading'); });
         thumb.addEventListener('error', () => { wrap.classList.remove('loading'); });
     } else {
         wrap.classList.remove('loading');
@@ -413,22 +413,22 @@ function initModal() {
 
 function openModal(game) {
     if (!modalOverlay) return;
-    const img      = modalOverlay.querySelector('#modal-img');
-    const title    = modalOverlay.querySelector('#modal-title');
-    const status   = modalOverlay.querySelector('#modal-status');
-    const role     = modalOverlay.querySelector('#modal-role');
-    const visits   = modalOverlay.querySelector('#modal-visits');
-    const year     = modalOverlay.querySelector('#modal-year');
-    const skills   = modalOverlay.querySelector('#modal-skills');
-    const playBtn  = modalOverlay.querySelector('#modal-play');
+    const img = modalOverlay.querySelector('#modal-img');
+    const title = modalOverlay.querySelector('#modal-title');
+    const status = modalOverlay.querySelector('#modal-status');
+    const role = modalOverlay.querySelector('#modal-role');
+    const visits = modalOverlay.querySelector('#modal-visits');
+    const year = modalOverlay.querySelector('#modal-year');
+    const skills = modalOverlay.querySelector('#modal-skills');
+    const playBtn = modalOverlay.querySelector('#modal-play');
     const roleStat = modalOverlay.querySelector('#modal-role-stat');
-    const playingEl= modalOverlay.querySelector('#modal-playing');
+    const playingEl = modalOverlay.querySelector('#modal-playing');
 
-    if (title)  title.textContent  = game.title;
+    if (title) title.textContent = game.title;
     if (status) { status.textContent = game.status; status.className = `game-status-badge ${statusClass(game.status)}`; }
-    if (role)   role.textContent   = game.role;
+    if (role) role.textContent = game.role;
     if (visits) visits.textContent = game.liveVisitsFormatted ? game.liveVisitsFormatted : game.description;
-    if (year)   year.textContent   = game.year;
+    if (year) year.textContent = game.year;
     if (roleStat) roleStat.textContent = game.role;
     if (playingEl) {
         playingEl.textContent = typeof game.playing === 'number' ? formatPlaying(game.playing) : '—';
@@ -468,11 +468,11 @@ function initBackTop() {
 function buildHero() {
     if (typeof ME === 'undefined') return;
     const set = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
-    set('hero-name',          ME.name);
-    set('hero-subtitle',      ME.subtitle);
-    set('hero-desc',          ME.description);
-    set('nav-name',           ME.name);
-    set('footer-name',        ME.name);
+    set('hero-name', ME.name);
+    set('hero-subtitle', ME.subtitle);
+    set('hero-desc', ME.description);
+    set('nav-name', ME.name);
+    set('footer-name', ME.name);
     set('hero-location-text', (ME.location || 'Austria') + ' · Available for Work');
     document.title = `${ME.name} — ${ME.title}`;
     if (ME.favicon) {
@@ -532,7 +532,7 @@ function buildProcess() {
 function buildContact() {
     if (typeof LINKS === 'undefined') return;
     const discordBtn = document.getElementById('discord-btn');
-    const robloxBtn  = document.getElementById('roblox-btn');
+    const robloxBtn = document.getElementById('roblox-btn');
     if (discordBtn) {
         if (LINKS.discord) discordBtn.href = LINKS.discord;
         else discordBtn.style.display = 'none';
@@ -565,11 +565,12 @@ function initPortfolioFilters(games) {
 /* ── Portfolio Page Stats ────────────────────────────────── */
 function buildPortfolioStats(games) {
     const set = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
-    set('p-total',  games.length);
-    set('p-live',   games.filter(g => g.status === 'Live').length);
-    set('p-dev',    games.filter(g => g.status === 'In Development').length);
+    set('p-total', games.length);
+    set('p-live', games.filter(g => g.status === 'Live').length);
+    set('p-dev', games.filter(g => g.status === 'In Development').length);
     set('p-closed', games.filter(g => g.status === 'Closed').length);
     set('p-visits', '…');
+    set('p-playing', '…');
 }
 
 /* ── Re-render After Live Data ───────────────────────────── */
