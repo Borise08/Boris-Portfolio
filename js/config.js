@@ -207,6 +207,14 @@ const GAMES = [
     },
 
     {
+        placeId: "90741687201221",
+        role: "Developer",
+        year: "2024",
+        status: "Live",
+        skills: ["Building"],
+    },
+
+    {
         placeId: "15177898242",
         role: "Co-Founder",
         year: "2024",
@@ -217,7 +225,7 @@ const GAMES = [
     {
         placeId: "12037478139",
         role: "Developer",
-        year: "2025",
+        year: "2024",
         status: "Closed",
         skills: ["Building", "Scripting"],
     },
