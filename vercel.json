@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/roblox.js": {
+      "maxDuration": 10
+    }
+  }
+}

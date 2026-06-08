@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boris — Roblox Game Developer</title>
+    <meta name="description" content="Boris — Professional Roblox Game Developer. Builder, Scripter, Project Manager.">
+    <link rel="icon" href="images/Roblox_Studio_icon_2025.png" type="image/png">
+
+    <!-- Font Awesome (local) -->
+    <style>
+        @font-face { font-family:'Font Awesome 5 Free'; font-weight:900; font-display:block;
+            src:url('fonts/fa-solid-900.woff2') format('woff2'), url('fonts/fa-solid-900.ttf') format('truetype'); }
+        @font-face { font-family:'Font Awesome 5 Brands'; font-weight:400; font-display:block;
+            src:url('fonts/fa-brands-400.woff2') format('woff2'), url('fonts/fa-brands-400.ttf') format('truetype'); }
+        @font-face { font-family:'Font Awesome 5 Free'; font-weight:400; font-display:block;
+            src:url('fonts/fa-regular-400.woff2') format('woff2'), url('fonts/fa-regular-400.ttf') format('truetype'); }
+    </style>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- Particles -->
+<div id="particles"></div>
+
+<!-- Loading Screen -->
+<div id="loading">
+    <div class="loading-logo">Boris</div>
+    <div class="loading-bar-wrap">
+        <div class="loading-bar-fill"></div>
+    </div>
+    <div class="loading-label">Loading Portfolio...</div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand" id="nav-name">Boris</a>
+        <div class="nav-links">
+            <a href="#hero"    class="nav-link">Home</a>
+            <a href="#skills"  class="nav-link">Skills</a>
+            <a href="#games"   class="nav-link">Games</a>
+            <a href="#process" class="nav-link">Process</a>
+            <a href="Portfolio.html" class="nav-link">Portfolio</a>
+            <a href="#contact" class="nav-link cta">Contact</a>
+        </div>
+        <button class="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <a href="#hero"    class="nav-link">Home</a>
+    <a href="#skills"  class="nav-link">Skills</a>
+    <a href="#games"   class="nav-link">Games</a>
+    <a href="#process" class="nav-link">Process</a>
+    <a href="Portfolio.html" class="nav-link">Portfolio</a>
+    <a href="#contact" class="nav-link">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<section id="hero">
+    <div class="hero-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    <div class="cubes"></div>
+
+    <div class="container">
+        <div class="hero-grid">
+            <div>
+                <div class="hero-badge reveal">
+                    <span id="hero-location-text">Austria · Available for Work</span>
+                </div>
+                <h1 class="hero-name reveal reveal-delay-1">
+                    <span id="hero-name">Boris</span><br>
+                    <span class="gradient-text">Game Dev.</span>
+                </h1>
+                <p class="hero-subtitle reveal reveal-delay-2" id="hero-subtitle">
+                    Builder · Scripter · Project Manager
+                </p>
+                <p class="hero-desc reveal reveal-delay-3" id="hero-desc">
+                    Crafting immersive Roblox experiences through detailed building, Lua scripting, and team leadership.
+                </p>
+                <div class="hero-btns reveal reveal-delay-4">
+                    <a href="Portfolio.html" class="btn btn-primary">
+                        <i class="fas fa-gamepad"></i> View Portfolio
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">
+                        <i class="fas fa-envelope"></i> Get in Touch
+                    </a>
+                </div>
+                <div class="hero-stats reveal reveal-delay-5">
+                    <div class="hero-stat">
+                        <div class="hero-stat-num" id="stat-games">40+</div>
+                        <div class="hero-stat-label">Games Built</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num" id="stat-visits">…</div>
+                        <div class="hero-stat-label">Total Visits</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-num" id="stat-exp">6</div>
+                        <div class="hero-stat-label">Years Active</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SKILLS
+═══════════════════════════════════════════ -->
+<section id="skills">
+    <div class="container">
+        <div class="reveal">
+            <span class="section-label">What I Do</span>
+            <h2 class="section-title">My Expertise</h2>
+            <p class="section-sub">Specialized skills built through years of hands-on Roblox development.</p>
+        </div>
+        <div class="skills-grid" id="skills-grid">
+            <!-- Built dynamically from config.js -->
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FEATURED GAMES
+═══════════════════════════════════════════ -->
+<section id="games">
+    <div class="container">
+        <div class="games-header">
+            <div class="reveal">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured Games</h2>
+                <p class="section-sub">A selection of projects I've built, scripted, or led.</p>
+            </div>
+            <a href="Portfolio.html" class="btn btn-ghost reveal">
+                View All Games <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="games-grid" id="games-grid">
+            <!-- Built dynamically from config.js -->
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PROCESS
+═══════════════════════════════════════════ -->
+<section id="process">
+    <div class="container">
+        <div class="reveal">
+            <span class="section-label">How I Work</span>
+            <h2 class="section-title">My Process</h2>
+            <p class="section-sub">From idea to launch — a clear and proven development workflow.</p>
+        </div>
+        <div class="process-steps" id="process-steps">
+            <!-- Built dynamically from config.js -->
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════ -->
+<section id="contact">
+    <div class="container">
+        <div class="reveal">
+            <span class="section-label">Hire Me</span>
+            <h2 class="section-title">Let's Build<br>Something Great</h2>
+            <p class="section-sub">Looking for a skilled Roblox developer? Let's talk.</p>
+        </div>
+        <div class="contact-grid">
+            <div>
+                <div class="contact-features">
+                    <div class="contact-feat reveal reveal-delay-1">
+                        <div class="contact-feat-icon"><i class="fas fa-hammer"></i></div>
+                        <div>
+                            <h4>Immersive Building</h4>
+                            <p>Detailed Roblox environments that pull players into your world.</p>
+                        </div>
+                    </div>
+                    <div class="contact-feat reveal reveal-delay-2">
+                        <div class="contact-feat-icon"><i class="fas fa-code"></i></div>
+                        <div>
+                            <h4>Lua Scripting</h4>
+                            <p>Solid game mechanics, UIs, and systems coded in Lua.</p>
+                        </div>
+                    </div>
+                    <div class="contact-feat reveal reveal-delay-3">
+                        <div class="contact-feat-icon"><i class="fas fa-users-cog"></i></div>
+                        <div>
+                            <h4>Project Management</h4>
+                            <p>End-to-end team coordination from concept to live launch.</p>
+                        </div>
+                    </div>
+                    <div class="contact-feat reveal reveal-delay-4">
+                        <div class="contact-feat-icon"><i class="fas fa-coins"></i></div>
+                        <div>
+                            <h4>Flexible Payment</h4>
+                            <p>Robux &amp; PayPal accepted — competitive rates from 5K Robux.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="contact-card reveal reveal-delay-2">
+                    <h3>Ready to Start?</h3>
+                    <p>Send me a message on Discord or check out my Roblox profile. I respond within 24 hours.</p>
+                    <a href="#" class="discord-btn" id="discord-btn" target="_blank" rel="noopener">
+                        <i class="fab fa-discord"></i> Message on Discord
+                    </a>
+                    <a href="#" class="roblox-btn" id="roblox-btn" target="_blank" rel="noopener">
+                        <i class="fas fa-gamepad"></i> View Roblox Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <span class="footer-brand" id="footer-name">Boris</span>
+            <span class="footer-copy">© 2025 Boris. All rights reserved.</span>
+            <div class="footer-links">
+                <a href="Portfolio.html">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     MODAL
+═══════════════════════════════════════════ -->
+<div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+        <div class="modal-thumb">
+            <img id="modal-img" src="" alt="Game thumbnail">
+            <button class="modal-close-btn" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modal-title">Game Title</h2>
+                <div class="modal-badges">
+                    <span class="game-status-badge" id="modal-status">Live</span>
+                    <span class="game-role-badge" id="modal-role">Developer</span>
+                </div>
+            </div>
+            <div class="modal-stats">
+                <div class="modal-stat">
+                    <div class="modal-stat-val" id="modal-visits">—</div>
+                    <div class="modal-stat-label">Visits</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-val" id="modal-playing">—</div>
+                    <div class="modal-stat-label">Playing Now</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-val" id="modal-year">—</div>
+                    <div class="modal-stat-label">Year</div>
+                </div>
+                <div class="modal-stat">
+                    <div class="modal-stat-val" id="modal-role-stat">—</div>
+                    <div class="modal-stat-label">Role</div>
+                </div>
+            </div>
+            <div class="modal-skills">
+                <h4>Skills Used</h4>
+                <div class="game-skills" id="modal-skills"></div>
+            </div>
+            <a href="#" class="modal-play-btn" id="modal-play" target="_blank" rel="noopener">
+                <i class="fas fa-play"></i> Play on Roblox
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Music Player -->
+<div class="music-player" id="music-player">
+    <button class="music-play-btn" aria-label="Play/Pause">
+        <i class="fas fa-play"></i>
+    </button>
+    <div class="music-info">
+        <div class="music-title">Background Music</div>
+        <div class="music-artist">Portfolio BGM</div>
+    </div>
+    <div class="music-bars">
+        <span></span><span></span><span></span>
+    </div>
+</div>
+
+<!-- Back to Top -->
+<button class="back-top" id="back-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
