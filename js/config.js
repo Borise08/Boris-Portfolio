@@ -97,18 +97,18 @@ const SKILLS = [
 // ──────────────────────────────────────────────────────────────────────
 const GAMES = [
     {
-        placeId: "137917254543162",
-        role: "Developer",
-        year: "2026",
-        status: "In Development",
-        skills: ["Building", "Scripting"],
-    },
-    {
         placeId: "117946489105796",
         role: "Lead Developer",
         year: "2026",
         status: "Live",
         skills: ["Development Leader", "Building", "Scripting"],
+    },
+    {
+        placeId: "137917254543162",
+        role: "Developer",
+        year: "2026",
+        status: "In Development",
+        skills: ["Building", "Scripting"],
     },
     {
         placeId: "87017354625620",
@@ -120,6 +120,14 @@ const GAMES = [
 
     {
         placeId: "80368750667927",
+        role: "Developer",
+        year: "2026",
+        status: "In Development",
+        skills: ["Building"],
+    },
+
+    {
+        placeId: "132252466568540",
         role: "Developer",
         year: "2026",
         status: "In Development",
