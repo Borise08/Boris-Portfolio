@@ -55,7 +55,7 @@ const SKILLS = [
         name: "Builder",
         badge: "Expert",
         level: 90,
-        experience: "5 Years",
+        experience: "6 Years",
         description: "Crafting detailed environments, structures, and interactive elements that create immersive worlds players explore and enjoy."
     },
     {
