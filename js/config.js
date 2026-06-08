@@ -9,14 +9,14 @@
 //  ① YOUR BASIC INFO
 // ──────────────────────────────────────────────────────────────────────
 const ME = {
-    name:        "Boris",
-    title:       "Roblox Game Developer",
-    subtitle:    "Builder · Scripter · Project Manager",
+    name: "Boris",
+    title: "Roblox Game Developer",
+    subtitle: "Builder · Scripter · Project Manager",
     description: "Crafting immersive Roblox experiences through detailed building, Lua scripting, and team leadership. Turning ideas into worlds players love.",
-    location:    "Austria",
-    experience:  "6",
-    totalGames:  "40+",
-    favicon:     "images/Roblox_Studio_icon_2025.png",
+    location: "Austria",
+    experience: "6",
+    totalGames: "40+",
+    favicon: "images/Roblox_Studio_icon_2025.png",
 };
 
 
@@ -25,10 +25,10 @@ const ME = {
 // ──────────────────────────────────────────────────────────────────────
 const LINKS = {
     discord: "https://discord.com/users/391302528530120726",
-    roblox:  "https://www.roblox.com/users/2024925409/profile",
+    roblox: "https://www.roblox.com/users/2024925409/profile",
     youtube: "",
     twitter: "",
-    github:  "",
+    github: "",
 };
 
 
@@ -36,12 +36,12 @@ const LINKS = {
 //  ③ BACKGROUND MUSIC  🎵
 // ──────────────────────────────────────────────────────────────────────
 const MUSIC = {
-    enabled:     true,
-    autoplay:    false,
+    enabled: true,
+    autoplay: false,
     track: {
-        title:   "Ambient Theme",
-        artist:  "Portfolio BGM",
-        src:     "",
+        title: "Ambient Theme",
+        artist: "Portfolio BGM",
+        src: "",
     }
 };
 
@@ -51,27 +51,27 @@ const MUSIC = {
 // ──────────────────────────────────────────────────────────────────────
 const SKILLS = [
     {
-        icon:        "fas fa-hammer",
-        name:        "Builder",
-        badge:       "Expert",
-        level:       90,
-        experience:  "5 Years",
+        icon: "fas fa-hammer",
+        name: "Builder",
+        badge: "Expert",
+        level: 90,
+        experience: "5 Years",
         description: "Crafting detailed environments, structures, and interactive elements that create immersive worlds players explore and enjoy."
     },
     {
-        icon:        "fas fa-users-cog",
-        name:        "Project Manager",
-        badge:       "Advanced",
-        level:       80,
-        experience:  "3 Years",
+        icon: "fas fa-users-cog",
+        name: "Project Manager",
+        badge: "Advanced",
+        level: 80,
+        experience: "3 Years",
         description: "Coordinating development teams, managing project timelines, and ensuring quality gameplay from concept to launch."
     },
     {
-        icon:        "fas fa-code",
-        name:        "Scripter",
-        badge:       "Intermediate",
-        level:       40,
-        experience:  "2 Years",
+        icon: "fas fa-code",
+        name: "Scripter",
+        badge: "Intermediate",
+        level: 40,
+        experience: "2 Years",
         description: "Developing game mechanics, user interfaces, and interactive systems using Lua to bring functionality and life to game worlds."
     },
 ];
@@ -97,209 +97,224 @@ const SKILLS = [
 // ──────────────────────────────────────────────────────────────────────
 const GAMES = [
     {
+        placeId: "137917254543162",
+        role: "Developer",
+        year: "2026",
+        status: "In Development",
+        skills: ["Building", "Scripting"],
+    },
+    {
         placeId: "117946489105796",
-        role:    "Lead Developer",
-        year:    "2026",
-        status:  "In Development",
-        skills:  ["Development Leader", "Building", "Scripting"],
+        role: "Lead Developer",
+        year: "2026",
+        status: "Live",
+        skills: ["Development Leader", "Building", "Scripting"],
     },
     {
         placeId: "87017354625620",
-        role:    "Developer",
-        year:    "2026",
-        status:  "In Development",
-        skills:  ["Building"],
+        role: "Developer",
+        year: "2026",
+        status: "In Development",
+        skills: ["Building"],
     },
 
     {
         placeId: "80368750667927",
-        role:    "Developer",
-        year:    "2026",
-        status:  "In Development",
-        skills:  ["Building"],
+        role: "Developer",
+        year: "2026",
+        status: "In Development",
+        skills: ["Building"],
+    },
+
+    {
+        placeId: "125408923887211",
+        role: "Developer",
+        year: "2026",
+        status: "Closed",
+        skills: ["Building", "Scripting"],
     },
 
     {
         placeId: "15673122636",
-        role:    "Developer",
-        year:    "2026",
-        status:  "In Development",
-        skills:  ["Building", "Scripting"],
+        role: "Developer",
+        year: "2026",
+        status: "In Development",
+        skills: ["Building", "Scripting"],
+    },
+
+    {
+        placeId: "124855981322362",
+        role: "Developer",
+        year: "2026",
+        status: "In Development",
+        skills: ["Building"],
     },
 
     {
         placeId: "5538476793",
-        role:    "Developer",
-        year:    "2025",
-        status:  "In Development",
-        skills:  ["Building"],
+        role: "Developer",
+        year: "2025",
+        status: "In Development",
+        skills: ["Building"],
     },
 
     {
         placeId: "4525999910",
-        role:    "Builder",
-        year:    "2025",
-        status:  "Live",
-        skills:  ["Building"],
+        role: "Builder",
+        year: "2025",
+        status: "Live",
+        skills: ["Building"],
     },
 
     {
         placeId: "81868833187028",
-        role:    "Lead Developer",
-        year:    "2025",
-        status:  "Closed",
-        skills:  ["Development Leader", "Building"],
+        role: "Lead Developer",
+        year: "2025",
+        status: "Closed",
+        skills: ["Development Leader", "Building"],
     },
 
     {
         placeId: "135215101417021",
-        role:    "Builder",
-        year:    "2025",
-        status:  "Live",
-        skills:  ["Building"],
+        role: "Builder",
+        year: "2025",
+        status: "Live",
+        skills: ["Building"],
     },
 
     {
         placeId: "16813393477",
-        role:    "Scripter",
-        year:    "2025",
-        status:  "Closed",
-        skills:  ["Scripting"],
+        role: "Scripter",
+        year: "2025",
+        status: "Live",
+        skills: ["Scripting"],
     },
 
     {
         placeId: "18389247410",
-        role:    "Developer",
-        year:    "2025",
-        status:  "In Development",
-        skills:  ["Building", "Scripting"],
+        role: "Developer",
+        year: "2025",
+        status: "In Development",
+        skills: ["Building", "Scripting"],
     },
 
     {
         placeId: "101282827084357",
-        role:    "Lead Developer",
-        year:    "2025",
-        status:  "Closed",
-        skills:  ["Development Leader", "Building", "Scripting"],
+        role: "Lead Developer",
+        year: "2025",
+        status: "Closed",
+        skills: ["Development Leader", "Building", "Scripting"],
     },
 
     {
         placeId: "15177898242",
-        role:    "Co-Founder",
-        year:    "2024",
-        status:  "Live",
-        skills:  ["Development Leader", "Building", "Scripting"],
+        role: "Co-Founder",
+        year: "2024",
+        status: "Live",
+        skills: ["Development Leader", "Building", "Scripting"],
     },
 
     {
         placeId: "12037478139",
-        role:    "Developer",
-        year:    "2025",
-        status:  "Closed",
-        skills:  ["Building", "Scripting"],
-    },
-
-    {
-        placeId: "110921972710289",
-        role:    "Developer",
-        year:    "2025",
-        status:  "Closed",
-        skills:  ["Building", "Scripting"],
+        role: "Developer",
+        year: "2025",
+        status: "Closed",
+        skills: ["Building", "Scripting"],
     },
 
     {
         placeId: "72118524838278",
-        role:    "Lead Developer",
-        year:    "2024",
-        status:  "Closed",
-        skills:  ["Development Leader", "Building", "Scripting"],
+        role: "Lead Developer",
+        year: "2024",
+        status: "Closed",
+        skills: ["Development Leader", "Building", "Scripting"],
     },
 
     {
         placeId: "16671201510",
-        role:    "Founder",
-        year:    "2024",
-        status:  "Closed",
-        skills:  ["Development Leader", "Building", "Scripting"],
+        role: "Founder",
+        year: "2024",
+        status: "Closed",
+        skills: ["Development Leader", "Building", "Scripting"],
     },
 
     {
         // No Roblox game URL — manual title + image
         placeId: null,
-        title:   "Erzgebirgskaserne, Sachsen",
-        image:   "https://tr.rbxcdn.com/180DAY-42199a2fe3d2b5d4bbb17f3e1e7efbfe/150/150/Image/Webp/noFilter",
-        role:    "Lead Developer",
-        year:    "2024",
-        status:  "In Development",
-        skills:  ["Development Leader", "Building", "Scripting"],
+        title: "Erzgebirgskaserne, Sachsen",
+        image: "https://tr.rbxcdn.com/180DAY-42199a2fe3d2b5d4bbb17f3e1e7efbfe/150/150/Image/Webp/noFilter",
+        role: "Lead Developer",
+        year: "2024",
+        status: "In Development",
+        skills: ["Development Leader", "Building", "Scripting"],
     },
 
     {
         placeId: "16277797512",
-        role:    "Developer",
-        year:    "2024",
-        status:  "Live",
-        skills:  ["Building", "Scripting"],
+        role: "Developer",
+        year: "2024",
+        status: "Live",
+        skills: ["Building", "Scripting"],
     },
 
     {
         placeId: "90337621469883",
-        role:    "Founder",
-        year:    "2024",
-        status:  "Closed",
-        skills:  ["Development Leader", "Building", "Scripting"],
+        role: "Founder",
+        year: "2024",
+        status: "Closed",
+        skills: ["Development Leader", "Building", "Scripting"],
     },
 
     {
         // Group link — no place ID
         placeId: null,
-        title:   "Stadt Essen",
-        image:   "images/Essen.webp",
+        title: "Stadt Essen",
+        image: "images/Essen.webp",
         gameUrl: "https://www.roblox.com/communities/13882294/Stadt-Essen#!/about",
-        role:    "Lead Developer",
-        year:    "2023",
-        status:  "Closed",
-        skills:  ["Development Leader", "Building"],
+        role: "Lead Developer",
+        year: "2023",
+        status: "Closed",
+        skills: ["Development Leader", "Building"],
     },
 
     {
         placeId: "8765694897",
-        role:    "Founder",
-        year:    "2023",
-        status:  "Closed",
-        skills:  ["Development Leader", "Building", "Scripting"],
+        role: "Founder",
+        year: "2023",
+        status: "Closed",
+        skills: ["Development Leader", "Building", "Scripting"],
     },
 
     {
         placeId: "15220895306",
-        role:    "Lead Developer",
-        year:    "2023",
-        status:  "Closed",
-        skills:  ["Development Leader", "Building", "Scripting"],
+        role: "Lead Developer",
+        year: "2023",
+        status: "Closed",
+        skills: ["Development Leader", "Building", "Scripting"],
     },
 
     {
         placeId: "14796365158",
-        role:    "Founder",
-        year:    "2023",
-        status:  "Closed",
-        skills:  ["Development Leader", "Building", "Scripting"],
+        role: "Founder",
+        year: "2023",
+        status: "Closed",
+        skills: ["Development Leader", "Building", "Scripting"],
     },
 
     {
         placeId: "15211677346",
-        role:    "Founder",
-        year:    "2023",
-        status:  "Closed",
-        skills:  ["Development Leader", "Building", "Scripting"],
+        role: "Founder",
+        year: "2023",
+        status: "Closed",
+        skills: ["Development Leader", "Building", "Scripting"],
     },
 
     {
         placeId: "5840410897",
-        role:    "Builder",
-        year:    "2020",
-        status:  "Closed",
-        skills:  ["Building"],
+        role: "Builder",
+        year: "2020",
+        status: "Closed",
+        skills: ["Building"],
     },
 
     /*
@@ -321,9 +336,9 @@ const GAMES = [
 // ──────────────────────────────────────────────────────────────────────
 const DISPLAY = {
     homepageGameCount: 6,
-    enableParticles:   true,
-    enableCursor:      true,
-    loadingDuration:   2200,
+    enableParticles: true,
+    enableCursor: true,
+    loadingDuration: 2200,
 };
 
 
@@ -333,21 +348,21 @@ const DISPLAY = {
 const PROCESS_STEPS = [
     {
         number: "01",
-        title:  "Planning & Design",
-        desc:   "Understanding your game vision and mapping out detailed plans. We define scope, technical requirements, and an achievable timeline.",
-        tags:   ["Project Planning", "Technical Analysis", "Resource Allocation"],
+        title: "Planning & Design",
+        desc: "Understanding your game vision and mapping out detailed plans. We define scope, technical requirements, and an achievable timeline.",
+        tags: ["Project Planning", "Technical Analysis", "Resource Allocation"],
     },
     {
         number: "02",
-        title:  "Development & Building",
-        desc:   "Creating immersive environments, scripting game mechanics with Lua, and building systems that keep players engaged.",
-        tags:   ["Environment Building", "Lua Scripting", "System Development"],
+        title: "Development & Building",
+        desc: "Creating immersive environments, scripting game mechanics with Lua, and building systems that keep players engaged.",
+        tags: ["Environment Building", "Lua Scripting", "System Development"],
     },
     {
         number: "03",
-        title:  "Testing & Launch",
-        desc:   "Quality assurance testing, performance optimization, team coordination, and successful deployment.",
-        tags:   ["Quality Testing", "Team Coordination", "Launch Deployment"],
+        title: "Testing & Launch",
+        desc: "Quality assurance testing, performance optimization, team coordination, and successful deployment.",
+        tags: ["Quality Testing", "Team Coordination", "Launch Deployment"],
     },
 ];
 
@@ -356,9 +371,9 @@ const PROCESS_STEPS = [
 //  ⑧ PRICING
 // ──────────────────────────────────────────────────────────────────────
 const PRICING = {
-    note:    "Every project is unique — pricing is based on complexity, scope, and timeline. Contact me for a free quote.",
+    note: "Every project is unique — pricing is based on complexity, scope, and timeline. Contact me for a free quote.",
     methods: ["Robux", "PayPal"],
-    rate:    "From 5,000 Robux",
+    rate: "From 5,000 Robux",
 };
 
 
